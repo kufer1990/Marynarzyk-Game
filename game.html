@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style/bootstrap.css"> -->
+    <!-- css -->
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1>Kamien Papier Nozyczki</h1>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-12">Wybierz element</div>
+
+        </div>
+    </div>
+    <div class="container">
+        <!-- section game elements -->
+        <div class="row">
+            <!-- player item -->
+            <div class="col-12">
+                <div class="row mt-5 justify-content-between panelPlayerItem">
+                    <div class="col-3 gameItem kamien"><img class="w-100 h-100" id="kamien" src="img/kamien.jfif"
+                            alt=""></div>
+                    <div class="col-3 gameItem papier"><img class="w-100 h-100" id="papier" src="img//papier.jfif"
+                            alt=""></div>
+                    <div class="col-3 gameItem nozyczki"><img class="w-100 h-100" id="nozyczki" src="img/nozyczki.jpg"
+                            alt=""></div>
+                </div>
+            </div>
+            <div class="row w-100">
+                <div class="col-12 parentGraj">
+                    <div class="btn-outline-dark graj mt-5">Graj</div>
+                    <!-- <button class="graj" type="submit" value="Graj">Graj</button></div> -->
+                </div>
+
+            </div>
+        </div>
+        <section class="container wynik">
+            <div class="row text-center mt-5">
+                <form action="game.php" method="post">
+                    <input type="text" id="winTotal" name="winTotal" hidden='true'>
+                    <input type="text" id="lostTotal" name ="lostTotal" hidden='true'>
+                    <input type="text" id="drawTotal" name="drawTotal" hidden='true'>
+                    <input type="text" id="allGames" name="allGame" hidden='true'>
+                    <!-- <input type="submit" value="zapisz"/> -->
+                </form>
+                <div class="col-3">Wyniki:</div>
+                <div class="col-3">Wygrane: <div class="win">0</div>
+                </div>
+                <div class="col-3">Przegrane: <div class="lost">0</div>
+                </div>
+                <div class="col-3">Remis: <div class="draw">0</div>
+                </div>
+
+                <div class="col-3">Wygrane Total: <div class="winTotal">0</div>
+                </div>
+                <div class="col-3">Przegrane Total: <div class="lostTotal">0</div>
+                </div>
+                <div class="col-3">Remisy Total: <div class="drawTotal">0</div>
+                </div>
+                <div class="col-3">Wszystkie rozegrane partie: <div class="allGames">0</div>
+                </div>
+            </div>  
+        </section>
+        <section class="container mt-5">
+            <div class="row"><div class="col-12"><div class="roundStat text-center"></div></div></div>
+            </section>
+
+</body>
+<!-- js bootstra -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+<!-- moje skrypty -->
+<!-- <script src="script/statistic.js"  ></script> -->
+<script src="script/script.js"></script>
+
+</html>
